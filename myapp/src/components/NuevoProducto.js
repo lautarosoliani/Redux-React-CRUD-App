@@ -7,25 +7,25 @@ const NuevoProducto = () => {
                 <div className="card">
                     <div className="card-body">
                         <h2 className="text-cneter mb-4 font-weight-bold">
-                            Agregar Nuevo Producto
+                            Complete to add new product
                         </h2>
                         <form>
                             <div className="form-group">
-                                <label>Nombre Productos</label>
+                                <label>Product Name</label>
                                 <input
                                     type="text"
                                     className="form-control"
-                                    placeholder="Nombre Prodcuto"
+                                    placeholder="Insert Name"
                                     name="nombre"
                                 ></input>
                             </div>
 
                             <div className="form-group">
-                                <label>Precio Productos</label>
+                                <label>Product Price</label>
                                 <input
                                     type="number"
                                     className="form-control"
-                                    placeholder="Precio Producto"
+                                    placeholder="Insert Price"
                                     name="precio"
                                 ></input>
                             </div>
@@ -34,7 +34,7 @@ const NuevoProducto = () => {
                                 type="submit"
                                 className="btn btn-primary font-weight-bold text-uppercase d-block w-100"
                             >
-                                Agregar
+                                ADD NEW PRODUCT
                             </button>
                         </form>
                     </div>

@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
-import React from "react";
-import Header from "./components/Header";
-import Productos from "./components/Productos";
-import NuevoProducto from "./components/NuevoProducto";
-import EditarProducto from "./components/EditarProducto";
+import React from "react"
+import Header from "./components/Header"
+import Productos from "./components/Productos"
+import NuevoProducto from "./components/NuevoProducto"
+import EditarProducto from "./components/EditarProducto"
 
 function App() {
     return (
@@ -27,7 +27,7 @@ function App() {
                 </Switch>
             </div>
         </Router>
-    );
+    )
 }
 
-export default App;
+export default App

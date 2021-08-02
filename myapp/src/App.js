@@ -1,5 +1,5 @@
 function App() {
-  return <h1>Testing</h1>;
+  return <h1>Redux</h1>;
 }
 
 export default App;

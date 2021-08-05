@@ -8,7 +8,7 @@ import clienteAxios from "../config/axios"
 //crear nuevos productos
 
 export function crearNuevoProductoAction(producto) {
-    return (dispatch) => {
+    return async (dispatch) => {
         dispatch(agregarProducto())
         try {
             //insertar en la API

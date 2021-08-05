@@ -4,8 +4,8 @@ export const AGREGAR_PRODUCTO_ERROR = "AGREGAR_PRODUCTO_ERROR"
 
 // crear nuevos productos
 
-export function crearNuevoProductoAction() {
+export function crearNuevoProductoAction(producto) {
     return () => {
-        console.log("desde actio")
+        console.log(producto)
     }
 }

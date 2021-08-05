@@ -10,6 +10,8 @@ import EditarProducto from "./components/EditarProducto"
 import { Provider } from "react-redux"
 import store from "./store"
 
+// PROBANDO
+
 function App() {
     return (
         <Router>

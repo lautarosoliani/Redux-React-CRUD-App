@@ -4,6 +4,7 @@ import {
     AGREGAR_PRODUCTO_ERROR,
 } from "../types"
 import clienteAxios from "../config/axios"
+import Swal from "sweetalert2"
 
 //crear nuevos productos
 
@@ -12,10 +13,12 @@ export function crearNuevoProductoAction(producto) {
         dispatch(agregarProducto())
         try {
             //insertar en la API
-            await clienteAxios.post("/hola", producto)
+            await clienteAxios.post("/productos", producto)
 
-            //si todo sale bine, actualizar el state
+            //si todo sale bine, actualizar el State
             dispatch(agregarProductoExito(producto))
+
+            Swal.fire("Correct", "Product added correctly", "success")
         } catch (error) {
             console.log(error)
             //si hay un error cambiar el State
